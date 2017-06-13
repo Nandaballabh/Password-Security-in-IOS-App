@@ -19,11 +19,6 @@
 		B8432B28181FDD1A002C6CDA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8432B27181FDD1A002C6CDA /* ViewController.m */; };
 		B8432B2B181FDD1A002C6CDA /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8432B29181FDD1A002C6CDA /* ViewController_iPhone.xib */; };
 		B8432B2E181FDD1A002C6CDA /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8432B2C181FDD1A002C6CDA /* ViewController_iPad.xib */; };
-		B8432B36181FDD1A002C6CDA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8432B35181FDD1A002C6CDA /* SenTestingKit.framework */; };
-		B8432B37181FDD1A002C6CDA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8432B0E181FDD1A002C6CDA /* UIKit.framework */; };
-		B8432B38181FDD1A002C6CDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8432B10181FDD1A002C6CDA /* Foundation.framework */; };
-		B8432B40181FDD1A002C6CDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8432B3E181FDD1A002C6CDA /* InfoPlist.strings */; };
-		B8432B43181FDD1A002C6CDA /* Demo_SecurityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8432B42181FDD1A002C6CDA /* Demo_SecurityTests.m */; };
 		B8432B4E181FDE4A002C6CDA /* NKeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B8432B4D181FDE4A002C6CDA /* NKeychainWrapper.m */; };
 		B8432B50181FE255002C6CDA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8432B4F181FE255002C6CDA /* Security.framework */; };
 		B865EA28183CFBD7003B8E7F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B865EA26183CFBD7003B8E7F /* LoginViewController.m */; };
@@ -33,16 +28,6 @@
 		B865EA32183CFD0F003B8E7F /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B865EA30183CFD0F003B8E7F /* WelcomeViewController.m */; };
 		B865EA33183CFD0F003B8E7F /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B865EA31183CFD0F003B8E7F /* WelcomeViewController.xib */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B8432B39181FDD1A002C6CDA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8432B03181FDD19002C6CDA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B8432B0A181FDD19002C6CDA;
-			remoteInfo = Demo_Security;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B8432B0B181FDD1A002C6CDA /* Demo_Security.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo_Security.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,8 +47,6 @@
 		B8432B27181FDD1A002C6CDA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B8432B2A181FDD1A002C6CDA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		B8432B2D181FDD1A002C6CDA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
-		B8432B34181FDD1A002C6CDA /* Demo_SecurityTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Demo_SecurityTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8432B35181FDD1A002C6CDA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B8432B3D181FDD1A002C6CDA /* Demo_SecurityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo_SecurityTests-Info.plist"; sourceTree = "<group>"; };
 		B8432B3F181FDD1A002C6CDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B8432B41181FDD1A002C6CDA /* Demo_SecurityTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo_SecurityTests.h; sourceTree = "<group>"; };
@@ -94,16 +77,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B8432B30181FDD1A002C6CDA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B8432B36181FDD1A002C6CDA /* SenTestingKit.framework in Frameworks */,
-				B8432B37181FDD1A002C6CDA /* UIKit.framework in Frameworks */,
-				B8432B38181FDD1A002C6CDA /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -121,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				B8432B0B181FDD1A002C6CDA /* Demo_Security.app */,
-				B8432B34181FDD1A002C6CDA /* Demo_SecurityTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,7 +105,6 @@
 				B8432B0E181FDD1A002C6CDA /* UIKit.framework */,
 				B8432B10181FDD1A002C6CDA /* Foundation.framework */,
 				B8432B12181FDD1A002C6CDA /* CoreGraphics.framework */,
-				B8432B35181FDD1A002C6CDA /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,7 +112,7 @@
 		B8432B14181FDD1A002C6CDA /* Demo_Security */ = {
 			isa = PBXGroup;
 			children = (
-				B865EA34183D0246003B8E7F /* KeyChain */,
+				B865EA34183D0246003B8E7F /* KeyChain Wrapper */,
 				B8432B1D181FDD1A002C6CDA /* AppDelegate.h */,
 				B8432B1E181FDD1A002C6CDA /* AppDelegate.m */,
 				B8432B26181FDD1A002C6CDA /* ViewController.h */,
@@ -195,13 +166,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B865EA34183D0246003B8E7F /* KeyChain */ = {
+		B865EA34183D0246003B8E7F /* KeyChain Wrapper */ = {
 			isa = PBXGroup;
 			children = (
 				B8432B4C181FDE4A002C6CDA /* NKeychainWrapper.h */,
 				B8432B4D181FDE4A002C6CDA /* NKeychainWrapper.m */,
 			);
-			name = KeyChain;
+			name = "KeyChain Wrapper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,32 +195,14 @@
 			productReference = B8432B0B181FDD1A002C6CDA /* Demo_Security.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B8432B33181FDD1A002C6CDA /* Demo_SecurityTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B8432B49181FDD1B002C6CDA /* Build configuration list for PBXNativeTarget "Demo_SecurityTests" */;
-			buildPhases = (
-				B8432B2F181FDD1A002C6CDA /* Sources */,
-				B8432B30181FDD1A002C6CDA /* Frameworks */,
-				B8432B31181FDD1A002C6CDA /* Resources */,
-				B8432B32181FDD1A002C6CDA /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B8432B3A181FDD1A002C6CDA /* PBXTargetDependency */,
-			);
-			name = Demo_SecurityTests;
-			productName = Demo_SecurityTests;
-			productReference = B8432B34181FDD1A002C6CDA /* Demo_SecurityTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B8432B03181FDD19002C6CDA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastTestingUpgradeCheck = 0730;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = nanda;
 			};
 			buildConfigurationList = B8432B06181FDD19002C6CDA /* Build configuration list for PBXProject "Demo_Security" */;
@@ -265,7 +218,6 @@
 			projectRoot = "";
 			targets = (
 				B8432B0A181FDD19002C6CDA /* Demo_Security */,
-				B8432B33181FDD1A002C6CDA /* Demo_SecurityTests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,31 +239,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B8432B31181FDD1A002C6CDA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B8432B40181FDD1A002C6CDA /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		B8432B32181FDD1A002C6CDA /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B8432B07181FDD19002C6CDA /* Sources */ = {
@@ -328,23 +256,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B8432B2F181FDD1A002C6CDA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B8432B43181FDD1A002C6CDA /* Demo_SecurityTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B8432B3A181FDD1A002C6CDA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B8432B0A181FDD19002C6CDA /* Demo_Security */;
-			targetProxy = B8432B39181FDD1A002C6CDA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B8432B17181FDD1A002C6CDA /* InfoPlist.strings */ = {
@@ -396,6 +308,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -446,6 +359,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo_Security/Demo_Security-Prefix.pch";
 				INFOPLIST_FILE = "Demo_Security/Demo_Security-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "nanda.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -457,42 +371,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo_Security/Demo_Security-Prefix.pch";
 				INFOPLIST_FILE = "Demo_Security/Demo_Security-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "nanda.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		B8432B4A181FDD1B002C6CDA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Demo_Security.app/Demo_Security";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Demo_Security/Demo_Security-Prefix.pch";
-				INFOPLIST_FILE = "Demo_SecurityTests/Demo_SecurityTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		B8432B4B181FDD1B002C6CDA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Demo_Security.app/Demo_Security";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Demo_Security/Demo_Security-Prefix.pch";
-				INFOPLIST_FILE = "Demo_SecurityTests/Demo_SecurityTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -513,15 +394,6 @@
 			buildConfigurations = (
 				B8432B47181FDD1A002C6CDA /* Debug */,
 				B8432B48181FDD1A002C6CDA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B8432B49181FDD1B002C6CDA /* Build configuration list for PBXNativeTarget "Demo_SecurityTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B8432B4A181FDD1B002C6CDA /* Debug */,
-				B8432B4B181FDD1B002C6CDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

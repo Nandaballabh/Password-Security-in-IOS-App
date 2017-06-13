@@ -133,7 +133,7 @@
     NSString *name = [[NSUserDefaults standardUserDefaults] stringForKey:UserName];
     name = [name stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     // 2
-    NSString *computedHashString = [NSString stringWithFormat:@"%@%i%@", name, pinHash, SALT_HASH];
+    NSString *computedHashString = [NSString stringWithFormat:@"%@%lu%@", name, (unsigned long)pinHash, SALT_HASH];
     // 3
     NSString *finalHash = [self computeSHA256DigestForString:computedHashString];
     NSLog(@"** Computed hash: %@ for SHA256 Digest: %@", computedHashString, finalHash);
@@ -150,7 +150,7 @@
     
     // This is an iOS5-specific method
     // Takes in the data, how much data, and then output format which in this case is an int array
-    CC_SHA256(data.bytes, data.length, digest);
+    CC_SHA256(data.bytes, (unsigned int)data.length, digest);
     
     // Setup our Objective-C output
     NSMutableString* output = [NSMutableString stringWithCapacity:CC_SHA256_DIGEST_LENGTH * 2];
