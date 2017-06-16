@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "KeychainAccess"
+  s.name         = "NBKeychainAccess"
   s.version      = "1.0"
   s.license      = { :type => 'MIT' }
   s.summary      = "Simple Example of Keychain"
@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/Nandaballabh/Password-Security-in-IOS-App.git", :tag=>'v1.0'}
   s.requires_arc = true
-  s.source_files = 'Demo_Security/KeychainAccess/*.{h,m}'
+  s.source_files = 'Demo_Security/KeychainAccess/*'
 end
