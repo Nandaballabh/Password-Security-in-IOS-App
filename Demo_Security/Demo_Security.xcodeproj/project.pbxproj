@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B83EACCE1EF3903B00BAC488 /* NKeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B83EACCD1EF3903B00BAC488 /* NKeychainWrapper.m */; };
 		B8432B0F181FDD1A002C6CDA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8432B0E181FDD1A002C6CDA /* UIKit.framework */; };
 		B8432B11181FDD1A002C6CDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8432B10181FDD1A002C6CDA /* Foundation.framework */; };
 		B8432B13181FDD1A002C6CDA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8432B12181FDD1A002C6CDA /* CoreGraphics.framework */; };
@@ -19,7 +20,6 @@
 		B8432B28181FDD1A002C6CDA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8432B27181FDD1A002C6CDA /* ViewController.m */; };
 		B8432B2B181FDD1A002C6CDA /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8432B29181FDD1A002C6CDA /* ViewController_iPhone.xib */; };
 		B8432B2E181FDD1A002C6CDA /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8432B2C181FDD1A002C6CDA /* ViewController_iPad.xib */; };
-		B8432B4E181FDE4A002C6CDA /* NKeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B8432B4D181FDE4A002C6CDA /* NKeychainWrapper.m */; };
 		B8432B50181FE255002C6CDA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8432B4F181FE255002C6CDA /* Security.framework */; };
 		B865EA28183CFBD7003B8E7F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B865EA26183CFBD7003B8E7F /* LoginViewController.m */; };
 		B865EA29183CFBD7003B8E7F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B865EA27183CFBD7003B8E7F /* LoginViewController.xib */; };
@@ -30,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B83EACCC1EF3903B00BAC488 /* NKeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NKeychainWrapper.h; path = KeychainAccess/NKeychainWrapper.h; sourceTree = "<group>"; };
+		B83EACCD1EF3903B00BAC488 /* NKeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NKeychainWrapper.m; path = KeychainAccess/NKeychainWrapper.m; sourceTree = "<group>"; };
 		B8432B0B181FDD1A002C6CDA /* Demo_Security.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo_Security.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8432B0E181FDD1A002C6CDA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B8432B10181FDD1A002C6CDA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,8 +53,6 @@
 		B8432B3F181FDD1A002C6CDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B8432B41181FDD1A002C6CDA /* Demo_SecurityTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo_SecurityTests.h; sourceTree = "<group>"; };
 		B8432B42181FDD1A002C6CDA /* Demo_SecurityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_SecurityTests.m; sourceTree = "<group>"; };
-		B8432B4C181FDE4A002C6CDA /* NKeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKeychainWrapper.h; sourceTree = "<group>"; };
-		B8432B4D181FDE4A002C6CDA /* NKeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKeychainWrapper.m; sourceTree = "<group>"; };
 		B8432B4F181FE255002C6CDA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B865EA25183CFBD7003B8E7F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		B865EA26183CFBD7003B8E7F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
@@ -169,8 +169,8 @@
 		B865EA34183D0246003B8E7F /* KeyChain Wrapper */ = {
 			isa = PBXGroup;
 			children = (
-				B8432B4C181FDE4A002C6CDA /* NKeychainWrapper.h */,
-				B8432B4D181FDE4A002C6CDA /* NKeychainWrapper.m */,
+				B83EACCC1EF3903B00BAC488 /* NKeychainWrapper.h */,
+				B83EACCD1EF3903B00BAC488 /* NKeychainWrapper.m */,
 			);
 			name = "KeyChain Wrapper";
 			sourceTree = "<group>";
@@ -249,9 +249,9 @@
 				B8432B1B181FDD1A002C6CDA /* main.m in Sources */,
 				B8432B1F181FDD1A002C6CDA /* AppDelegate.m in Sources */,
 				B8432B28181FDD1A002C6CDA /* ViewController.m in Sources */,
-				B8432B4E181FDE4A002C6CDA /* NKeychainWrapper.m in Sources */,
 				B865EA28183CFBD7003B8E7F /* LoginViewController.m in Sources */,
 				B865EA2D183CFC5B003B8E7F /* SignUpViewController.m in Sources */,
+				B83EACCE1EF3903B00BAC488 /* NKeychainWrapper.m in Sources */,
 				B865EA32183CFD0F003B8E7F /* WelcomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

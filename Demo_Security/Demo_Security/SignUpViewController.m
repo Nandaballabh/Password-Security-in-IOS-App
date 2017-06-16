@@ -21,14 +21,15 @@
         [[[UIAlertView alloc]initWithTitle:@"Error!" message:@"Password does not matched" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil]show];
         return;
     }
+    
+    [[NSUserDefaults standardUserDefaults] setObject:self.email.text forKey:UserName];
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:IsPinSaved];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     NSUInteger fieldHash = [self.sPassword.text hash];
     NSString *fieldString = [NKeychainWrapper securedSHA256DigestHashForPIN:fieldHash];
     NSLog(@"** Password Hash - %@", fieldString);
     // Save PIN hash to the keychain (NEVER store the direct PIN)
     if ([NKeychainWrapper createKeychainValue:fieldString forIdentifier:IsPinSaved]) {
-        [[NSUserDefaults standardUserDefaults] setObject:self.email.text forKey:UserName];
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:IsPinSaved];
-        [[NSUserDefaults standardUserDefaults] synchronize];
         NSLog(@"** Key saved successfully to Keychain!!");
         [self.navigationController popToRootViewControllerAnimated:YES];
     }
