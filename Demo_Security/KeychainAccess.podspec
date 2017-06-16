@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/Nandaballabh/Password-Security-in-IOS-App.git",:tag=>'v1.0'}
   s.requires_arc = true
-  s.source_files = 'Demo_Security/KeychainAccess/*'
+  s.source_files = 'Password-Security-in-IOS-App/Demo_Security/KeychainAccess/*'
 end
